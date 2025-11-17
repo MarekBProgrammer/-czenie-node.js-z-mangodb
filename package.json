@@ -2,11 +2,11 @@
   "name": "my-node-fetch-project",
   "version": "1.0.0",
   "description": "Projekt Node.js do pobierania danych z API przy użyciu node-fetch",
-  "main": "index.js",
+  "main": "server/server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
   },
   "keywords": [],
   "author": "",
