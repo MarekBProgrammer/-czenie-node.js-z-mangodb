@@ -8,8 +8,7 @@ const { ReturnDocument } = require('mongodb');
 const app = express();
 const port = 3000;
 
-syncDataToDB(); 
-setInterval(syncDataToDB, 120000); 
+// call sync after DB connection established
 
 app.get('/orders', async (req, res) => {
     try {
@@ -99,6 +98,8 @@ app.get('/:orderId', async (req, res) => {
 });
 
 connectDb().then(() => {
+    syncDataToDB();
+    setInterval(syncDataToDB, 120000);
     app.listen(port, () => {
         console.log(`Server is running at http://localhost:${port}`);
     }); 

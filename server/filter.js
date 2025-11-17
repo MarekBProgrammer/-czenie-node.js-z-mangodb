@@ -1,4 +1,3 @@
-const {syncDataToDB} = require('./database.js');
 async function instal(data){
     const extracteddData = data.map(order => ({
         orderId: order.orderId,
@@ -11,3 +10,4 @@ async function instal(data){
     ));
     return extracteddData;
 }
+module.exports = { instal };
