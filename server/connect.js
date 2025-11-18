@@ -7,8 +7,8 @@ if (typeof globalThis.fetch === 'function') {
     const nf = require('node-fetch');
     fetchFn = nf.default || nf;
 }
-const apiUrl = 'https://idosell.readme.io/reference/ordersordersget-1';
-const apiKey = 'YXBwbGljYXRpb24xNjpYeHI1K0MrNVRaOXBaY2lEcnpiQzBETUZROUxrRzFFYXZuMkx2L0RHRXZRdXNkcmF5R0Y3ZnhDMW1nejlmVmZP';
+const apiUrl = '';
+const apiKey = 'WWYXBwbGljYXRpb24xNjpYeHI1K0MrNVRaOXBaY2lEcnpiQzBETUZROUxrRzFFYXZuMkx2L0RHRXZRdXNkcmF5R0Y3ZnhDMW1nejlmVmZP';
 
 async function fetchData(){
     const lastfetch = new Date(Date.now() - 120000).toISOString();
